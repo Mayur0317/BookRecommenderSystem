@@ -43,7 +43,7 @@ def create_sim():
   
 # defining a function that recommends 10 most similar movies
 def rcmd(m):
-    data = pd.read_csv('C:\\Users\\Dell\\Desktop\\DataScience\\My_Work\\Book2\\data.csv')
+    data = pd.read_csv('data.csv')
     
     cv = CountVectorizer()
     count_matrix = cv.fit_transform(data['comb'])
