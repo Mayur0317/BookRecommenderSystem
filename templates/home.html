@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en" class="ltr">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="/static/img/fav.png">
+	                                
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Recommendor System</title>
+
+	<!--
+			Google Font
+			============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="templates/css/linearicons.css">
+	<link rel="stylesheet" href="templates/css/font-awesome.min.css">
+	<link rel="stylesheet" href="templates/css/bootstrap.css">
+	<link rel="stylesheet" href="templates/css/magnific-popup.css">
+	<link rel="stylesheet" href="templates/css/nice-select.css">
+	<link rel="stylesheet" href="templates/css/animate.min.css">
+	<link rel="stylesheet" href="templates/css/owl.carousel.css">
+	<link rel="stylesheet" href="templates/css/main.css">
+</head>
+
+<body>
+<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="{{url_for('home')}}">
+					<img src="/static/img/loga.png" alt="" title="Home" />
+					</a>
+				</div>
+			<!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+<!--<section class="home-banner-area relative">-->
+		<div class="container">
+		<!--	<div class="row fullscreen d-flex align-items-center justify-content-center">-->
+				<div class="banner-content col-lg-8 col-md-12">
+				
+                      <div class="input-wrap">
+						<form action="{{url_for('recommend')}}" class="form-box d-flex justify-content-between">
+							
+							<input type="text" name="title" class="form-control" placeholder="Book name here"  >
+							
+							<button type="submit" class="btn search-btn" value="Enter">Search</button>
+						   
+						</form>
+						{% endblock %}	
+					</div>
+				</div>
+		    <!-- </div>-->
+		</div>
+		
+		
+		
+	<!--</section>-->
+	<!-- End Banner Area -->
+<!-- ####################### Start Scroll to Top Area ####################### -->
+	
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="templates/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="templates/js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="templates/js/easing.min.js"></script>
+	<script src="templates/js/hoverIntent.js"></script>
+	<script src="templates/js/superfish.min.js"></script>
+	<script src="templates/js/jquery.ajaxchimp.min.js"></script>
+	<script src="templates/js/jquery.magnific-popup.min.js"></script>
+	<script src="templates/js/owl.carousel.min.js"></script>
+	<script src="templates/js/owl-carousel-thumb.min.js"></script>
+	<script src="templates/js/jquery.sticky.js"></script>
+	<script src="templates/js/jquery.nice-select.min.js"></script>
+	<script src="templates/js/parallax.min.js"></script>
+	<script src="templates/js/waypoints.min.js"></script>
+	<script src="templates/js/wow.min.js"></script>
+	<script src="templates/js/jquery.counterup.min.js"></script>
+	<script src="templates/js/mail-script.js"></script>
+	<script src="templates/js/main.js"></script>
+</body>
+
+</html>
